@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.html, body {
+	background: #D9D9D9;
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #D9D9D9;
+}
+
+.player {
+	width: 339px;
+	height: 520px;
+	border-radius: 11px;
+	background: #D9D9D9;
+	box-shadow: 5px 5px 13px 0px rgba(87, 87, 87, 0.90) inset, -5px -5px 10px 0px rgba(255, 255, 255, 0.90) inset, 5px -5px 10px 0px rgba(87, 87, 87, 0.20) inset, -5px 5px 10px 0px rgba(87, 87, 87, 0.20) inset, -1px -1px 2px 0px rgba(87, 87, 87, 0.50), 1px 1px 2px 0px rgba(255, 255, 255, 0.30);
+	.title {
+		color: #0000ED;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 100;
+		line-height: normal;
+		text-align: center;
+		margin: 25px;
+		margin-top: 22px;
+	}
+	.cover {
+		display: flex;
+		justify-content: center;
+		margin: 37px 0;
+		margin-top: 37px;
+		.cover__img {
+			&.active {
+				animation: rotateAnimation 3s linear infinite;
+			}
+		}
+	}
+	.songname {
+		text-align: center;
+		height: 26.55px;
+	}
+	.progress__container {
+		width: 250px;
+		height: 7px;
+		border-radius: 3.5px;
+		background: linear-gradient(135deg, #C0C0C0 0%, #D4D4D4 100%);
+		box-shadow: 4px 4px 10px 0px rgba(81, 81, 81, 0.90), -4px -4px 8px 0px rgba(255, 255, 255, 0.90), 4px -4px 8px 0px rgba(81, 81, 81, 0.20), -4px 4px 8px 0px rgba(81, 81, 81, 0.20), -1px -1px 2px 0px rgba(81, 81, 81, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+		margin: 44px;
+		margin-top: 25px;
+		cursor: pointer;
+		.progress {
+			width: 0px;
+			height: 7px;
+			border-radius: 3.5px;
+			background: #0000ED;
+			box-shadow: 0px 0px 14px 6px rgba(0, 0, 237, 0.37);
+		}
+	}
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 218px;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: -5px;
+		.btn {
+			cursor: pointer;
+		}
+	}
+}
+
+@keyframes rotateAnimation {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
